@@ -1,17 +1,17 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "projektgopher/laravel_workflow_generator",
+    "description": "Creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.",
     "keywords": [
-        ":vendor_name",
+        "ProjektGopher",
         "laravel",
-        "package_slug"
+        "laravel_workflow_generator"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/projektgopher/laravel_workflow_generator",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Len Woodward",
+            "email": "Len@ProjektGopher.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Projektgopher\\WorkflowGenerator\\": "src",
+            "Projektgopher\\WorkflowGenerator\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Projektgopher\\WorkflowGenerator\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Projektgopher\\WorkflowGenerator\\WorkflowGeneratorServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "WorkflowGenerator": "Projektgopher\\WorkflowGenerator\\WorkflowGeneratorFacade"
             }
         }
     },

@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Projektgopher\WorkflowGenerator\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class WorkflowGeneratorCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel_workflow_generator';
 
     public $description = 'My command';
 
