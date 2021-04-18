@@ -3,15 +3,32 @@
 namespace Projektgopher\WorkflowGenerator\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Filesystem\Filesystem;
 
 class WorkflowGeneratorCommand extends Command
 {
-    public $signature = 'laravel_workflow_generator';
+    public $signature = 'workflow:make {name?}';
 
-    public $description = 'My command';
+    public $description = 'Make workflow from stub';
+
+    protected $files;
+
+    public function __construct(Filesystem $files)
+    {
+        parent::__construct();
+
+        $this->files = $files;
+    }
 
     public function handle()
     {
-        $this->comment('All done');
+        if (!$this->files->exists('.github/workflows')) {
+            $this->files->makeDirectory('.github/workflows');
+
+            $this->info('Created .github/workflows directory.');
+        }
+
+        #$this->call('');
+        $this->comment('Making workflows all effin day.');
     }
 }

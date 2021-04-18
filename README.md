@@ -1,12 +1,11 @@
-# Creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.
-
+# Laravel workflow generator
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/projektgopher/laravel_workflow_generator.svg?style=flat-square)](https://packagist.org/packages/projektgopher/laravel_workflow_generator)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/projektgopher/laravel_workflow_generator/run-tests?label=tests)](https://github.com/projektgopher/laravel_workflow_generator/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/projektgopher/laravel_workflow_generator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/projektgopher/laravel_workflow_generator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/projektgopher/laravel_workflow_generator.svg?style=flat-square)](https://packagist.org/packages/projektgopher/laravel_workflow_generator)
 
 
-This adds an artisan make:workflow command to scaffold out a number of useful GitHub actions workflows for Laravel.
+This creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.
 
 ## Support us
 
