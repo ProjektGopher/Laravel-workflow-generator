@@ -2,9 +2,9 @@
 
 namespace Projektgopher\WorkflowGenerator;
 
+use Projektgopher\WorkflowGenerator\Commands\WorkflowGeneratorCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Projektgopher\WorkflowGenerator\Commands\WorkflowGeneratorCommand;
 
 class WorkflowGeneratorServiceProvider extends PackageServiceProvider
 {
