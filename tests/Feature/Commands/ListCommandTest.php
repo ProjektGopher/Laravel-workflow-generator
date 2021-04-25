@@ -2,10 +2,10 @@
 
 namespace Tests\Feature\Commands;
 
+use Illuminate\Support\LazyCollection;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Projektgopher\WorkflowGenerator\Tests\TestCase;
 use Projektgopher\WorkflowGenerator\Tests\Traits\MocksFilesystem;
-use Illuminate\Support\LazyCollection;
 
 /**
  * @covers \Projektgopher\WorkflowGenerator\Commands

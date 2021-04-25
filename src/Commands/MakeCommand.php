@@ -22,7 +22,7 @@ class MakeCommand extends Command
 
     public function handle()
     {
-        if (!$this->files->exists('.github/workflows')) {
+        if (! $this->files->exists('.github/workflows')) {
             $this->files->ensureDirectoryExists('.github/workflows');
 
             $this->info('Created .github/workflows directory.');
