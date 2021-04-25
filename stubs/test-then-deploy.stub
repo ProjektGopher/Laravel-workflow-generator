@@ -1,0 +1,27 @@
+name: Wait for tests then deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy: # This name is the one to be used in `running-workflow-name`
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Login to Github Package Registry
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login docker.pkg.github.com -u ${{ github.actor }} --password-stdin
+      - name: Wait on tests
+        uses: lewagon/wait-on-check-action@master
+        with:
+          ref: ${{ github.ref }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          wait-interval: 10
+          running-workflow-name: 'deploy' # HERE
+      - name: Deploy to staging
+        uses: ubient/laravel-vapor-action@master
+        env:
+          VAPOR_API_TOKEN: ${{ secrets.VAPOR_API_TOKEN }}
+        with:
+          args: "deploy staging"

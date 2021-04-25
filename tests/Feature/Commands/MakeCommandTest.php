@@ -21,7 +21,7 @@ class MakeCommandTest extends TestCase
             ->once()
             ->with('.github/workflows')
             ->andReturnFalse();
-        $this->files->shouldReceive('makeDirectory')
+        $this->files->shouldReceive('ensureDirectoryExists')
             ->once()
             ->with('.github/workflows')
             ->andReturnTrue();
@@ -31,6 +31,7 @@ class MakeCommandTest extends TestCase
         // $this->files->shouldReceive('exists')->with('app');
 
         $this->artisan('workflow:make')
+            ->expectsOutput('Created .github/workflows directory.')
             ->assertExitCode(0);
     }
 

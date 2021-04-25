@@ -2,7 +2,8 @@
 
 namespace Projektgopher\WorkflowGenerator;
 
-use Projektgopher\WorkflowGenerator\Commands\WorkflowGeneratorCommand;
+use Projektgopher\WorkflowGenerator\Commands\ListCommand;
+use Projektgopher\WorkflowGenerator\Commands\MakeCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,6 +19,9 @@ class WorkflowGeneratorServiceProvider extends PackageServiceProvider
         $package
             ->name('workflow_generator')
             ->hasConfigFile()
-            ->hasCommand(WorkflowGeneratorCommand::class);
+            ->hasCommands([
+                MakeCommand::class,
+                ListCommand::class,
+            ]);
     }
 }
