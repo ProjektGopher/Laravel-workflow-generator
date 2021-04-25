@@ -1,12 +1,12 @@
 {
-    "name": "projektgopher/laravel_workflow_generator",
+    "name": "projektgopher/laravel-workflow-generator",
     "description": "Creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.",
     "keywords": [
         "ProjektGopher",
         "laravel",
-        "laravel_workflow_generator"
+        "laravel-workflow-generator"
     ],
-    "homepage": "https://github.com/projektgopher/laravel_workflow_generator",
+    "homepage": "https://github.com/ProjektGopher/Laravel-workflow-generator",
     "license": "MIT",
     "authors": [
         {
