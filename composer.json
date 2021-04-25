@@ -4,6 +4,8 @@
     "keywords": [
         "ProjektGopher",
         "laravel",
+        "github",
+        "actions",
         "laravel-workflow-generator"
     ],
     "homepage": "https://github.com/ProjektGopher/Laravel-workflow-generator",
@@ -30,8 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Projektgopher\\WorkflowGenerator\\": "src",
-            "Projektgopher\\WorkflowGenerator\\Database\\Factories\\": "database/factories"
+            "Projektgopher\\WorkflowGenerator\\": "src"
         }
     },
     "autoload-dev": {
