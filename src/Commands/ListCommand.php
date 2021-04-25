@@ -29,8 +29,7 @@ class ListCommand extends Command
 
         $workflows = $this->files->files(__DIR__ . '/../../stubs');
 
-        foreach($workflows as $workflow)
-        {
+        foreach ($workflows as $workflow) {
             $filename = Str::between($workflow, 'stubs/', '.stub');
             $description = Str::between($this->files->lines($workflow)->first(), 'name: ', PHP_EOL);
             $this->line("  [{$filename}] {$description}");
