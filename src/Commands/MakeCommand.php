@@ -5,7 +5,7 @@ namespace Projektgopher\WorkflowGenerator\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
 
-class WorkflowGeneratorCommand extends Command
+class MakeCommand extends Command
 {
     public $signature = 'workflow:make {name?}';
 
@@ -23,7 +23,7 @@ class WorkflowGeneratorCommand extends Command
     public function handle()
     {
         if (!$this->files->exists('.github/workflows')) {
-            $this->files->makeDirectory('.github/workflows');
+            $this->files->ensureDirectoryExists('.github/workflows');
 
             $this->info('Created .github/workflows directory.');
         }
