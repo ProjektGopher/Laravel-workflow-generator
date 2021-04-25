@@ -1,6 +1,6 @@
 <?php
 
-namespace Projektgopher\WorkflowGenerator;
+namespace ProjektGopher\WorkflowGenerator;
 
 class WorkflowGenerator
 {

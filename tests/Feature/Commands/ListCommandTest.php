@@ -4,11 +4,11 @@ namespace Tests\Feature\Commands;
 
 use Illuminate\Support\LazyCollection;
 use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
-use Projektgopher\WorkflowGenerator\Tests\TestCase;
-use Projektgopher\WorkflowGenerator\Tests\Traits\MocksFilesystem;
+use ProjektGopher\WorkflowGenerator\Tests\TestCase;
+use ProjektGopher\WorkflowGenerator\Tests\Traits\MocksFilesystem;
 
 /**
- * @covers \Projektgopher\WorkflowGenerator\Commands
+ * @covers \ProjektGopher\WorkflowGenerator\Commands
  */
 class ListCommandTest extends TestCase
 {

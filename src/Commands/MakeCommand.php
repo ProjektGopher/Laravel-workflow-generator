@@ -1,6 +1,6 @@
 <?php
 
-namespace Projektgopher\WorkflowGenerator\Commands;
+namespace ProjektGopher\WorkflowGenerator\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

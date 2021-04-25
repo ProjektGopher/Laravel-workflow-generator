@@ -1,6 +1,6 @@
 <?php
 
-namespace Projektgopher\WorkflowGenerator\Tests\Traits;
+namespace ProjektGopher\WorkflowGenerator\Tests\Traits;
 
 trait MocksFilesystem
 {

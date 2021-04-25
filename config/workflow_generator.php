@@ -1,5 +1,5 @@
 <?php
-// config for Projektgopher/ClassName
+// config for ProjektGopher/ClassName
 return [
 
 ];

@@ -1,9 +1,9 @@
 <?php
 
-namespace Projektgopher\WorkflowGenerator;
+namespace ProjektGopher\WorkflowGenerator;
 
-use Projektgopher\WorkflowGenerator\Commands\ListCommand;
-use Projektgopher\WorkflowGenerator\Commands\MakeCommand;
+use ProjektGopher\WorkflowGenerator\Commands\ListCommand;
+use ProjektGopher\WorkflowGenerator\Commands\MakeCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 

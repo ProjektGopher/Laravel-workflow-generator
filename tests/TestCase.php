@@ -1,10 +1,10 @@
 <?php
 
-namespace Projektgopher\WorkflowGenerator\Tests;
+namespace ProjektGopher\WorkflowGenerator\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Projektgopher\WorkflowGenerator\WorkflowGeneratorServiceProvider;
+use ProjektGopher\WorkflowGenerator\WorkflowGeneratorServiceProvider;
 
 class TestCase extends Orchestra
 {

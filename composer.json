@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Projektgopher\\WorkflowGenerator\\": "src"
+            "ProjektGopher\\WorkflowGenerator\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Projektgopher\\WorkflowGenerator\\Tests\\": "tests"
+            "ProjektGopher\\WorkflowGenerator\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Projektgopher\\WorkflowGenerator\\WorkflowGeneratorServiceProvider"
+                "ProjektGopher\\WorkflowGenerator\\WorkflowGeneratorServiceProvider"
             ],
             "aliases": {
-                "WorkflowGenerator": "Projektgopher\\WorkflowGenerator\\WorkflowGeneratorFacade"
+                "WorkflowGenerator": "ProjektGopher\\WorkflowGenerator\\WorkflowGeneratorFacade"
             }
         }
     },

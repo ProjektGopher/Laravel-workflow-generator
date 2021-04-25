@@ -1,2 +1,2 @@
 providers:
-  - Projektgopher\WorkflowGenerator\WorkflowGeneratorServiceProvider
+  - ProjektGopher\WorkflowGenerator\WorkflowGeneratorServiceProvider

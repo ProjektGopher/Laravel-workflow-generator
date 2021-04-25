@@ -1,11 +1,11 @@
 <?php
 
-namespace Projektgopher\WorkflowGenerator;
+namespace ProjektGopher\WorkflowGenerator;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Projektgopher\WorkflowGenerator\WorkflowGenerator
+ * @see \ProjektGopher\WorkflowGenerator\WorkflowGenerator
  */
 class WorkflowGeneratorFacade extends Facade
 {
