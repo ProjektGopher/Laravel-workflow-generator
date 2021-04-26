@@ -22,36 +22,32 @@ class MakeCommand extends Command
 
     public function handle()
     {
-        if(! $workflow = $this->argument('name'))
-        {
+        if (! $workflow = $this->argument('name')) {
             $this->warn('You must specify the name of the workflow you\'d like to generate.');
             $this->warn('Use php artisan workflow:list to show a list of a available workflows.');
+
             return;
         }
 
-        if(! $this->files->exists(__DIR__ . "/../../stubs/{$workflow}.stub"))
-        {
+        if (! $this->files->exists(__DIR__ . "/../../stubs/{$workflow}.stub")) {
             $this->warn("We can't find a workflow named {$workflow}.");
             $this->warn('Use php artisan workflow:list to show a list of a available workflows.');
+
             return;
         }
 
-        if (! $this->files->exists('.github/workflows'))
-        {
+        if (! $this->files->exists('.github/workflows')) {
             $this->files->ensureDirectoryExists('.github/workflows');
             $this->info('Created .github/workflows directory.');
         }
 
-        if($this->files->exists(".github/workflows/{$workflow}.yml"))
-        {
-            if($this->option('force'))
-            {
+        if ($this->files->exists(".github/workflows/{$workflow}.yml")) {
+            if ($this->option('force')) {
                 $this->comment("Overwriting .github/workflows/{$workflow}.yml");
-            }
-            else
-            {
+            } else {
                 $this->warn(".github/workflows/{$workflow}.yml already exists.");
                 $this->comment("Try using php artisan workflow:make {$workflow} --force");
+
                 return;
             }
         }
