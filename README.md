@@ -36,20 +36,6 @@ php artisan workflow:list
 ```
 Will list out all available workflows to be generated. More will be added.
 
-Example Output:
-```bash
-All available workflows:
-  [name] workflow description
-
-  [dusk] Run Dusk Tests
-  [php-cs-fixer] Check & fix styling
-  [run-tests] Run Unit and Feature Tests
-  [test-then-deploy] Wait for tests then deploy
-
-To place one of these in your .github/workflows directory, use
-php artisan workflow:make [name]
-```
-
 ```bash
 php artisan workflow:make dusk
 ```
