@@ -1,8 +1,8 @@
 # Laravel workflow generator
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ProjektGopher/Laravel-workflow-generator.svg?style=flat-square)](https://packagist.org/packages/ProjektGopher/Laravel-workflow-generator)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/projektgopher/laravel-workflow-generator.svg?style=flat-square)](https://packagist.org/packages/projektgopher/laravel-workflow-generator)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ProjektGopher/Laravel-workflow-generator/run-tests?label=tests)](https://github.com/ProjektGopher/Laravel-workflow-generator/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ProjektGopher/Laravel-workflow-generator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ProjektGopher/Laravel-workflow-generator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/ProjektGopher/Laravel-workflow-generator.svg?style=flat-square)](https://packagist.org/packages/ProjektGopher/Laravel-workflow-generator)
+[![Total Downloads](https://img.shields.io/packagist/dt/projektgopher/laravel-workflow-generator.svg?style=flat-square)](https://packagist.org/packages/projektgopher/laravel-workflow-generator)
 
 
 This creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.
