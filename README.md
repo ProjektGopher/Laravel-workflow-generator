@@ -7,28 +7,15 @@
 
 This creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/package-Laravel-workflow-generator-laravel.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/package-Laravel-workflow-generator-laravel)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require ProjektGopher/Laravel-workflow-generator
+composer require projektgopher/laravel-workflow-generator
 ```
 
 You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --provider="ProjektGopher\WorkflowGenerator\WorkflowGeneratorServiceProvider" --tag="Laravel-workflow-generator-migrations"
-php artisan migrate
-```
 
 You can publish the config file with:
 ```bash
@@ -45,8 +32,7 @@ return [
 ## Usage
 
 ```php
-$Laravel-workflow-generator = new ProjektGopher\WorkflowGenerator();
-echo $Laravel-workflow-generator->echoPhrase('Hello, Spatie!');
+php artisan workflow:make dusk --force
 ```
 
 ## Testing
