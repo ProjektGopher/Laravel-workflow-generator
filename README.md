@@ -1,15 +1,15 @@
 # Laravel workflow generator
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/projektgopher/laravel_workflow_generator.svg?style=flat-square)](https://packagist.org/packages/projektgopher/laravel_workflow_generator)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/projektgopher/laravel_workflow_generator/run-tests?label=tests)](https://github.com/projektgopher/laravel_workflow_generator/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/projektgopher/laravel_workflow_generator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/projektgopher/laravel_workflow_generator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/projektgopher/laravel_workflow_generator.svg?style=flat-square)](https://packagist.org/packages/projektgopher/laravel_workflow_generator)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ProjektGopher/Laravel-workflow-generator.svg?style=flat-square)](https://packagist.org/packages/ProjektGopher/Laravel-workflow-generator)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ProjektGopher/Laravel-workflow-generator/run-tests?label=tests)](https://github.com/ProjektGopher/Laravel-workflow-generator/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ProjektGopher/Laravel-workflow-generator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ProjektGopher/Laravel-workflow-generator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/ProjektGopher/Laravel-workflow-generator.svg?style=flat-square)](https://packagist.org/packages/ProjektGopher/Laravel-workflow-generator)
 
 
 This creates a make:workflow artisan command to scaffold out a number of useful GitHub actions workflows for Laravel.
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/package-laravel_workflow_generator-laravel.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/package-laravel_workflow_generator-laravel)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/package-Laravel-workflow-generator-laravel.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/package-Laravel-workflow-generator-laravel)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
@@ -20,19 +20,19 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require projektgopher/laravel_workflow_generator
+composer require ProjektGopher/Laravel-workflow-generator
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Projektgopher\WorkflowGenerator\WorkflowGeneratorServiceProvider" --tag="laravel_workflow_generator-migrations"
+php artisan vendor:publish --provider="ProjektGopher\WorkflowGenerator\WorkflowGeneratorServiceProvider" --tag="Laravel-workflow-generator-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Projektgopher\WorkflowGenerator\WorkflowGeneratorServiceProvider" --tag="laravel_workflow_generator-config"
+php artisan vendor:publish --provider="ProjektGopher\WorkflowGenerator\WorkflowGeneratorServiceProvider" --tag="Laravel-workflow-generator-config"
 ```
 
 This is the contents of the published config file:
@@ -45,8 +45,8 @@ return [
 ## Usage
 
 ```php
-$laravel_workflow_generator = new Projektgopher\WorkflowGenerator();
-echo $laravel_workflow_generator->echoPhrase('Hello, Spatie!');
+$Laravel-workflow-generator = new ProjektGopher\WorkflowGenerator();
+echo $Laravel-workflow-generator->echoPhrase('Hello, Spatie!');
 ```
 
 ## Testing
