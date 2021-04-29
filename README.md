@@ -15,12 +15,12 @@ You can install the package via composer:
 composer require projektgopher/laravel-workflow-generator
 ```
 
-You can publish and run the migrations with:
-
 You can publish the config file with:
 ```bash
 php artisan vendor:publish --provider="ProjektGopher\WorkflowGenerator\WorkflowGeneratorServiceProvider" --tag="Laravel-workflow-generator-config"
 ```
+
+Though you probably won't need to at this point, as there's nothing there.
 
 This is the contents of the published config file:
 
@@ -31,9 +31,38 @@ return [
 
 ## Usage
 
-```php
+```bash
+php artisan workflow:list
+```
+Will list out all available workflows to be generated. More will be added.
+
+Example Output:
+```bash
+All available workflows:
+  [name] workflow description
+
+  [dusk] Run Dusk Tests
+  [php-cs-fixer] Check & fix styling
+  [run-tests] Run Unit and Feature Tests
+  [test-then-deploy] Wait for tests then deploy
+
+To place one of these in your .github/workflows directory, use
+php artisan workflow:make [name]
+```
+
+```bash
+php artisan workflow:make dusk
+```
+Will check for the .github/workflows directory, and create it if it doesn't yet exist.
+It will then check that directory for a dusk.yml file.
+If one doesn't yet exist, the package will create and populate it.
+If it does exist, the package will warn you.
+
+If you've updated the package and want to use a newer version of the workflow,
+```bash
 php artisan workflow:make dusk --force
 ```
+will overwrite the existing yml file with the newer version.
 
 ## Testing
 
